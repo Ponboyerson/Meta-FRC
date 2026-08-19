@@ -99,10 +99,10 @@ See `java-robot/README.md` for WPILib integration instructions.
 | 0 | Fork & bring-up | Headset streams pose to NT4 over wired connection |
 | 1 | Pose fusion | Fused pose tracks correctly through tag-visible → occluded → visible cycle |
 | 2 | Robot mounting | Headset mounted rigidly, survives driving/impacts |
-| 3 | Drift correction | AprilTag-based re-initialization implemented (upstream PR candidate) |
-| 4 | Track C recording | Flat + VR recorder working at practice |
-| 5 | Scrimmage validation | Live testing at scrimmage, accuracy logged |
-| 6 | Competition hardening | Passes inspection, works with Track B disabled |
+| 3 | Drift correction (AprilTag re-initialization) | Recovers reasonable pose within 2s after tracking loss, >90% success rate |
+| 4 | Track C recording | Coach can review flat + VR footage with synced logs |
+| 5 | Scrimmage validation | Localization accuracy logged and compared against Track A alone |
+| 6 | Competition hardening | Robot passes inspection, functions with Track B disabled |
 
 ---
 
