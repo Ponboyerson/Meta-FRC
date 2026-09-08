@@ -1,17 +1,24 @@
 ```
-# Java/Gradle
+# Dependencies
 .gradle/
-build/
-*.class
-*.jar
-*.war
-*.ear
+node_modules/
+venv/
+.venv/
+__pycache__/
+.mypy_cache/
+.pytest_cache/
 
-# IDE
+# Build artifacts
+build/
+dist/
+target/
+
+# IDE files
+.vscode/
 .idea/
-*.iml
-*.ipr
-*.iws
+*.swp
+*.swo
+*.tmp
 
 # Logs
 *.log
@@ -21,11 +28,12 @@ build/
 .env.local
 *.env.*
 
-# OS
+# Coverage
+coverage/
+htmlcov/
+.coverage
+
+# OS files
 .DS_Store
 Thumbs.db
-
-# Temp files
-*.tmp
-*.temp
 ```
