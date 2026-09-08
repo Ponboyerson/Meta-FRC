@@ -1,31 +1,62 @@
 ```
-# Java/Gradle
+# Dependencies
 .gradle/
-build/
-*.class
-*.jar
-*.war
-*.ear
+node_modules/
 
-# IDE
+# Build artifacts
+build/
+dist/
+target/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+env/
+.ENV/
+
+# IDE files
+.vscode/
 .idea/
-*.iml
-*.ipr
-*.iws
+*.swp
+*.swo
 
 # Logs
 *.log
 
-# Environment
+# Coverage reports
+coverage/
+htmlcov/
+.coverage
+
+# Temporary files
+*.tmp
+*.temp
+
+# Environment files
 .env
 .env.local
 *.env.*
 
-# OS
+# OS files
 .DS_Store
 Thumbs.db
 
-# Temp files
-*.tmp
-*.temp
+# Package manager caches
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Java build tools
+gradle/
+.gradle/
+!gradle/wrapper/gradle-wrapper.properties
+
+# Test reports
+test-results/
 ```
