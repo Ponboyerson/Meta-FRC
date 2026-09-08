@@ -21,6 +21,9 @@ import edu.wpi.first.wpilibj2.command.CommandScheduler;
 public class Robot extends TimedRobot {
     private final RobotContainer m_robotContainer;
     
+    // Track previous tag count for change detection
+    private int m_prevTagCount = 0;
+    
     @Override
     public void robotInit() {
         System.out.println("[Robot] Initializing Meta FRC Localization System");
@@ -56,6 +59,14 @@ public class Robot extends TimedRobot {
         if (autonomousCommand != null) {
             autonomousCommand.schedule();
         }
+        
+        SmartDashboard.putString("System/Mode", "Teleop");
+    }
+    
+    @Override
+    public void disabledInit() {
+        System.out.println("[Robot] Disabled");
+        SmartDashboard.putString("System/Mode", "Disabled");
     }
     
     @Override
